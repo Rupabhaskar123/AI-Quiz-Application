@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Quiz Master</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Background Effects -->
+    <div class="bg-circle circle1"></div>
+    <div class="bg-circle circle2"></div>
+
+    <!-- Main Container -->
+    <div class="quiz-container">
+
+        <!-- Header -->
+        <header>
+            <div class="logo">
+                🤖 <span>AI Quiz</span>
+            </div>
+
+            <div class="score-box">
+                Score: <span id="score">0</span>
+            </div>
+        </header>
+
+        <!-- Start Screen -->
+        <section id="start-screen" class="screen active">
+
+            <div class="robot">🤖</div>
+
+            <h1>Welcome to <span>AI Quiz Master</span></h1>
+
+            <p>
+                Test your knowledge of Artificial Intelligence,
+                Machine Learning and Technology.
+            </p>
+
+            <div class="quiz-info">
+
+                <div>
+                    <strong>10</strong>
+                    <small>Questions</small>
+                </div>
+
+                <div>
+                    <strong>15</strong>
+                    <small>Seconds / Question</small>
+                </div>
+
+                <div>
+                    <strong>AI</strong>
+                    <small>Topic</small>
+                </div>
+
+            </div>
+
+            <button id="start-btn" class="primary-btn">
+                Start Quiz 🚀
+            </button>
+
+        </section>
+
+
+        <!-- Quiz Screen -->
+        <section id="quiz-screen" class="screen">
+
+            <!-- Top Information -->
+            <div class="quiz-top">
+
+                <div>
+                    Question
+                    <span id="question-number">1</span>/10
+                </div>
+
+                <div class="timer">
+                    ⏱️ <span id="timer">15</span>s
+                </div>
+
+            </div>
+
+            <!-- Progress Bar -->
+            <div class="progress-container">
+                <div id="progress-bar"></div>
+            </div>
+
+
+            <!-- Question -->
+            <div class="question-card">
+
+                <h2 id="question">
+                    What does AI stand for?
+                </h2>
+
+                <div id="options" class="options">
+                    <!-- JavaScript will add options -->
+                </div>
+
+            </div>
+
+
+            <button id="next-btn" class="primary-btn next-btn" disabled>
+                Next Question →
+            </button>
+
+        </section>
+
+
+        <!-- Result Screen -->
+        <section id="result-screen" class="screen">
+
+            <div class="result-icon">
+                🏆
+            </div>
+
+            <h1>Quiz Completed!</h1>
+
+            <p>Your AI knowledge score is</p>
+
+            <div class="final-score">
+                <span id="final-score">0</span>/10
+            </div>
+
+            <div id="result-message">
+                Great job!
+            </div>
+
+            <button id="restart-btn" class="primary-btn">
+                🔄 Play Again
+            </button>
+
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
